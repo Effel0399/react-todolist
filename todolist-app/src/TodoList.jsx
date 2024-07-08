@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 function TodoList(){
     
-    const [tasks, setTasks] = useState([]);
+    const [tasks, setTasks] = useState(["Do laundry", "Clean house", "Make coffee"]);
     const [newTask, setNewTask] = useState("");
 
     function handleInputChange(event){
@@ -32,6 +32,18 @@ function TodoList(){
                 value={newTask}
                 onChange={handleInputChange}/>
             </div>
+            <button 
+                className='add-button'
+                onClick={addTask}>
+                Add
+            </button>
+
+            <ul>
+                {tasks.map((task, index) => 
+                <li key={index}>
+                    {task}
+                </li>)}
+            </ul>
         </div>
     );
 }
