@@ -45,9 +45,13 @@ function TodoList(){
 
             <ol>
                 {tasks.map((task, index) => 
-                <li key={index}>
-                    {task}
-                </li>)}
+                    <li key={index}>
+                        <span className='text'>{task}</span>
+                        <button>
+                            delete
+                        </button>
+                    </li>
+                )}
             </ol>
         </div>
     );
