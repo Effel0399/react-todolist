@@ -31,12 +31,13 @@ function TodoList(){
                 placeholder='Enter a task...'
                 value={newTask}
                 onChange={handleInputChange}/>
+                <button 
+                    className='add-button'
+                    onClick={addTask}>
+                    Add
+                </button>
             </div>
-            <button 
-                className='add-button'
-                onClick={addTask}>
-                Add
-            </button>
+            
 
             <ol>
                 {tasks.map((task, index) => 
