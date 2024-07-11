@@ -50,10 +50,10 @@ function TodoList(){
                         <button className='delete-button' onClick={() => deleteTask(index)}>
                             delete
                         </button>
-                        <button className='up-button' onClick={() => moveTaskUp(index)}>
+                        <button className='move-button' onClick={() => moveTaskUp(index)}>
                             ⬆️
                         </button>
-                        <button className='down-button' onClick={() => moveTaskDown(index)}>
+                        <button className='move-button' onClick={() => moveTaskDown(index)}>
                             ⬇️
                         </button>
                     </li>
