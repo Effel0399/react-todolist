@@ -9,7 +9,10 @@ function TodoList(){
         setNewTask(event.target.value)
     }
     function addTask(){
+        const newTask = document.getElementById("taskInput").value;
+        document.getElementById("taskInput").value = "";
 
+        setTasks(t => [...t, newTask]);
     }
     function deleteTask(index){
 
@@ -28,6 +31,7 @@ function TodoList(){
             <div>
                 <input 
                 type="text"
+                id='taskInput'
                 placeholder='Enter a task...'
                 value={newTask}
                 onChange={handleInputChange}/>
