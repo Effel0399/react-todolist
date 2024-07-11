@@ -38,12 +38,12 @@ function TodoList(){
                 Add
             </button>
 
-            <ul>
+            <ol>
                 {tasks.map((task, index) => 
                 <li key={index}>
                     {task}
                 </li>)}
-            </ul>
+            </ol>
         </div>
     );
 }
