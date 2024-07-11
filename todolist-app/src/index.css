@@ -1,0 +1,37 @@
+.todo-list{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 4rem;
+}
+h1{
+  font-size: 3rem;
+}
+
+button{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5 ease;
+}
+.add-button{
+  background-color: hsl(125, 47%, 55%);
+}
+.add-button:hover{
+  background-color: hsl(125, 47%, 45%);
+}
+.delete-button{
+  background-color: hsl(0, 73%, 61%);
+}
+.delete-button:hover{
+  background-color: hsl(0, 73%, 51%);
+}
+.move-button{
+  background-color: hsl(224, 73%, 61%);
+}
+.move-button:hover{
+  background-color: hsl(224, 73%, 51%);
+}
