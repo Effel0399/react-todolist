@@ -15,7 +15,7 @@ function TodoList(){
         setTasks(t => [...t, newTask]);
     }
     function deleteTask(index){
-
+        setFoods(tasks.filter((_, i) => i !== index));
     }
     function moveTaskUp(index){
 
@@ -47,8 +47,14 @@ function TodoList(){
                 {tasks.map((task, index) => 
                     <li key={index}>
                         <span className='text'>{task}</span>
-                        <button>
+                        <button className='delete-button' onClick={() => deleteTask(index)}>
                             delete
+                        </button>
+                        <button className='up-button' onClick={() => moveTaskUp(index)}>
+                            ⬆️
+                        </button>
+                        <button className='down-button' onClick={() => moveTaskDown(index)}>
+                            ⬇️
                         </button>
                     </li>
                 )}
