@@ -15,7 +15,7 @@ function TodoList(){
         setTasks(t => [...t, newTask]);
     }
     function deleteTask(index){
-        setFoods(tasks.filter((_, i) => i !== index));
+        setTasks(tasks.filter((_, i) => i !== index));
     }
     function moveTaskUp(index){
 
