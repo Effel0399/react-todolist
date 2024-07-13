@@ -67,3 +67,8 @@ li{
   flex-basis: 0%;
 }
 
+.delete-button, .move-button{
+  padding: 8px 12px;
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
