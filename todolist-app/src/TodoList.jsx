@@ -13,6 +13,7 @@ function TodoList(){
         document.getElementById("taskInput").value = "";
 
         setTasks(t => [...t, newTask]);
+        setNewTask("");
     }
     function deleteTask(index){
         setTasks(tasks.filter((_, i) => i !== index));
