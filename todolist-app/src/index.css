@@ -30,8 +30,8 @@ button{
   background-color: hsl(0, 73%, 51%);
 }
 .move-button{
-  background-color: hsl(224, 77%, 65%);
+  background-color: hsl(207, 90%, 65%);
 }
 .move-button:hover{
-  background-color: hsl(224, 77%, 55%);
+  background-color: hsl(207, 90%, 55%);
 }
