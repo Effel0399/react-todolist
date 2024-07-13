@@ -9,11 +9,13 @@ function TodoList(){
         setNewTask(event.target.value)
     }
     function addTask(){
-        const newTask = document.getElementById("taskInput").value;
-        document.getElementById("taskInput").value = "";
+        if(newTask.trim() !== ""){
+            const newTask = document.getElementById("taskInput").value;
+            document.getElementById("taskInput").value = "";
 
-        setTasks(t => [...t, newTask]);
-        setNewTask("");
+            setTasks(t => [...t, newTask]);
+            setNewTask("");
+        }
     }
     function deleteTask(index){
         setTasks(tasks.filter((_, i) => i !== index));
