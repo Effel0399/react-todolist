@@ -21,7 +21,11 @@ function TodoList(){
         setTasks(tasks.filter((_, i) => i !== index));
     }
     function moveTaskUp(index){
-
+        if(index > 0){
+            const updatedTasks = [...tasks];
+            [updatedTasks[index], updatedTasks[index-1]] = [updatedTasks[index-1], updatedTasks[index]];
+            setTasks(updatedTasks);
+        }
     }
     function moveTaskDown(index){
 
