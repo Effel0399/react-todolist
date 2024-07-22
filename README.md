@@ -5,7 +5,7 @@ This is a simple To-Do-List made with react framework.
 
 ### screenshot
 
-![](https://github.com/FNH99/react-todolist/blob/main/todolist-app/src/assets/react.svg)
+![](https://github.com/FNH99/react-todolist/blob/main/todolist-app/src/assets/screenshot.png)
 
 ### Links
 
