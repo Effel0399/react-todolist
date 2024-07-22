@@ -57,13 +57,13 @@ li{
   font-weight: bold;
   padding: 15px;
   background-color: hsl(0, 0%, 97%);
+  margin: 0 auto;
   margin-bottom: 10px;
+  max-width: 500px;
   border: 3px solid hsla(0, 0%, 85%, 0.75);
   border-radius: 5px;
   display: flex;
   align-items: center;
-  max-width: 500px;
-  
 }
 
 .text{
@@ -73,6 +73,8 @@ li{
   flex-shrink: 1;
   flex-basis: 0%;
 }
+
+
 
 .delete-button, .move-button{
   padding: 8px 12px;
