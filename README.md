@@ -5,7 +5,7 @@ This is a simple To-Do-List made with react framework.
 
 ### screenshot
 
-![](https://github.com/FNH99/game-ascii-roguelike/blob/main/img/screenshot-game.png)
+![](https://github.com/FNH99/react-todolist/blob/main/todolist-app/src/assets/react.svg)
 
 ### Links
 
